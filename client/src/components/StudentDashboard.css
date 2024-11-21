@@ -1,0 +1,222 @@
+/* General Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000, #083f7e); /* Black to Dark Blue gradient */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: #89BBFF; /* Light Slate Blue */
+  color: #FFFFFF; /* White text */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  color: #FFFFFF; /* Light Slate Blue */
+}
+
+/* Sidebar */
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(135deg, #000000, #00008b); /* Black to Dark Blue gradient */
+  color: #FFFFFF; /* White text */
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.side-navbar.visible {
+  left: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #FFFFFF; /* White border */
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF; /* White text */
+}
+
+/* Navbar Options */
+.navbar-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-options li {
+  margin: 10px 0;
+}
+
+.navbar-options button {
+  width: 80%;
+  padding: 10px;
+  color: #FFFFFF; /* White text */
+  background: #5B99F7; /* Light Slate Blue */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.navbar-options button:hover {
+  background: #34495E; /* Charcoal */
+  transform: scale(1.05);
+}
+
+.navbar-options button:focus {
+  outline: 2px solid #1A242F; /* Darker Slate for focus state */
+}
+
+/* Logout Button */
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #FFFFFF; /* White text */
+  background: #FF7F7F; /* Light Red Gradient */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.logout-btn:hover {
+  background: #FFBABA; /* Softer Red */
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 0;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+  transition: margin-left 0.3s ease;
+  color: #ECF0F1; /* Light Grey text */
+}
+
+.main-content.with-sidebar {
+  margin-left: 250px;
+}
+
+.main-content h2,
+.main-content p {
+  color: #FFFFFF; /* Light Slate Blue */
+}
+
+.main-content h3 {
+  color: #89BBFF; /* Softer Blue */
+}
+
+/* Menu Section Styling - Light Color Scheme */
+.menu-section {
+  background: linear-gradient(135deg, #DFF2FF, #89BBFF); /* Light Blue Gradient */
+  color: #34495E; /* Charcoal */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.menu-section h3 {
+  color: #557EF6; /* Medium Blue */
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.menu-section p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #34495E; /* Charcoal */
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  color: #FFFFFF; /* White text */
+}
+
+.footer-button {
+  margin: 0 10px;
+  color: #FFFFFF; /* White text */
+  background: #5B99F7; /* Light Slate Blue */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.footer-button:hover {
+ 
+  transform: scale(1.05);
+}
+
+/* Gradient Animation for Right Section or Image Container */
+.image-container {
+  background: linear-gradient(135deg, #000000, #00008B); /* Black to Dark Blue */
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Error Message */
+.error-message {
+  color: #FF0000; /* Red for errors */
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Gradient Animation */

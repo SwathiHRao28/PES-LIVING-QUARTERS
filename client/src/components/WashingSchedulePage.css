@@ -1,0 +1,41 @@
+/* Styles for the Laundry Schedule Page */
+.laundry-schedule-page {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.laundry-schedule-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.go-back-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.go-back-button:hover {
+    background-color: #45a049;
+}
+
+.laundry-schedule-page p {
+    font-size: 18px;
+    color: #555;
+}

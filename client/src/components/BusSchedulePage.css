@@ -1,0 +1,29 @@
+.bus-schedule-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.bus-schedule-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.go-back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+    background-color: #45a049;
+}

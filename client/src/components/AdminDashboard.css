@@ -1,0 +1,275 @@
+/* General Container */
+h3{color:#03070b;}
+.admin-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    body {
+        background: linear-gradient(45deg, black, #00008b); /* Gradient from black to dark blue at a 45-degree angle */
+        background-size: 200% 200%; /* Make the gradient large enough to animate */
+        animation: gradientMove 5s ease infinite; /* Animate the gradient */
+        color: #fff; /* White text color for contrast */
+        font-family: Arial, sans-serif; /* Optional: Set a font */
+    }
+    
+  
+    
+    .rules-list {
+        list-style-type: decimal;
+        padding-left: 40px;
+        color: #fff; /* White text color for rules */
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    /* Meal Count Section */
+.meal-count-section {
+   
+    width: 48%; /* Ensures sections fit side by side */
+    box-sizing: border-box; /* Padding doesn't overflow */
+    text-align: left; /* Ensures left alignment of text */
+    background: linear-gradient(135deg, #DFF2FF, #77acf6); /* Light Blue Gradient */
+    color: #03070b; /* Charcoal */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+.todays-special-section{background: linear-gradient(45deg, black, #00008b); /* Gradient from black to dark blue at a 45-degree angle */
+    width: 48%; /* Ensures sections fit side by side */
+    box-sizing: border-box; /* Padding doesn't overflow */
+  
+    background: linear-gradient(135deg, #DFF2FF, #89BBFF); /* Light Blue Gradient */
+    color: #34495E; /* Charcoal */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Meal Count Items */
+.meal-counts ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Ensures no indentation */
+    margin: 0;
+}
+
+.meal-counts li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+    .rules-list li {
+        margin-bottom: 10px;
+    }
+    
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: #333; /* Darker text for readability */
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #7fb3fd; /* Blue background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Sidebar */
+.side-navbar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.side-navbar.visible {
+    left: 0;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-options li {
+    margin: 10px 0;
+}
+
+.navbar-options button {
+    width: 80%;
+    padding: 10px;
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar-options button:hover {
+    background-color: #555;
+}
+
+/* Logout Button */
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    body {
+        background: linear-gradient(45deg, black, #3058a3); /* Gradient from black to dark blue at a 45-degree angle */
+        background-size: 200% 200%; /* Make the gradient large enough to animate */
+        animation: gradientMove 5s ease infinite; /* Animate the gradient */
+        color: #fff; /* White text color for contrast */
+        font-family: Arial, sans-serif; /* Optional: Set a font */
+    }
+    
+  
+    
+    .rules-list {
+        list-style-type: decimal;
+        padding-left: 40px;
+        color: #fff; /* White text color for rules */
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .rules-list li {
+        margin-bottom: 10px;
+    }
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.with-sidebar {
+    margin-left: 250px;
+}
+
+/* Layout for Today's Menu and Meal Counts Side-by-Side */
+.menu-and-counts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Today's Special Section */
+.todays-special-section, .meal-count-section {
+    body {
+        background: linear-gradient(45deg, black, #616db1); /* Gradient from black to dark blue at a 45-degree angle */
+        background-size: 200% 200%; /* Make the gradient large enough to animate */
+        animation: gradientMove 5s ease infinite; /* Animate the gradient */
+        color: #fff; /* White text color for contrast */
+        font-family: Arial, sans-serif; /* Optional: Set a font */
+    }
+    
+    
+    .rules-list {
+        list-style-type: decimal;
+        padding-left: 40px;
+        color: #fff; /* White text color for rules */
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .rules-list li {
+        margin-bottom: 10px;
+    }
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Ensures sections fit side by side */
+    box-sizing: border-box; /* Padding doesn't overflow */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #333;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #555;
+}

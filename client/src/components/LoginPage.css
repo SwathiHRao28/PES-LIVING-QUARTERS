@@ -1,0 +1,147 @@
+/* General Page Styling */
+.login-page {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Left Section (Login Form) */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Takes half the screen */
+    background-color: rgba(255, 255, 255, 0.8); /* Whitish background */
+    padding: 40px;
+    color: #2C3E50; /* Dark text for contrast */
+}
+
+/* Header Styling */
+.login-header {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2C3E50; /* Dark Slate Blue */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Right Section (Image/Design) */
+.image-container {
+    flex: 1; /* Takes the other half */
+    background: linear-gradient(135deg, #000000, #00008b); /* Black to Dark Blue gradient */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Add an Image Inside */
+.image-container img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #2C3E50;
+}
+
+/* Style for the faUser icon */
+ i.fa-user {
+    margin-right: 10px; /* Adds space between the icon and the label */
+    color: #34495E; /* Matching the color theme */
+    font-size: 100px; /* Adjust the icon size */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White background for inputs */
+    color: #333; /* Dark Text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.login-btn {
+    background-color: #34495E; /* Slate Blue */
+    color: #ECF0F1; /* Light Grey text */
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+    background-color: #2C3E50; /* Darker Slate Blue */
+    transform: translateY(-3px);
+}
+
+.login-btn:active {
+    background-color: #1A242F;
+    transform: translateY(1px);
+}
+
+/* Button Styling for Tomorrow's Selection */
+.choose-for-tomorrow-btn {
+    padding: 12px 25px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #5b99f7, #34495e); /* Soft Blue to Dark Blue Gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Button Hover Effect for Tomorrow's Selection */
+.choose-for-tomorrow-btn:hover {
+    background: linear-gradient(135deg, #34495e, #5b99f7); /* Reverse Gradient */
+    transform: translateY(-2px); /* Button lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Button Focus Effect for Tomorrow's Selection */
+.choose-for-tomorrow-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(87, 157, 246, 0.6); /* Blue Focus ring */
+}

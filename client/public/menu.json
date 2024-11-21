@@ -1,0 +1,77 @@
+[{
+    "_id": {
+      "$oid": "673832636024f86d50e8fd03"
+    },
+    "day": "Monday",
+    "breakfast": "Rava Idly",
+    "lunch": "Chole,batura,veg pulav",
+    "snacks": "Aloo Bajji",
+    "dinner": "Biriyani",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "673832d76024f86d50e8fd05"
+    },
+    "day": "Tuesday",
+    "breakfast": "Dosa",
+    "lunch": "Rice,Rasam,papad",
+    "snacks": "Something",
+    "dinner": "Biriyani",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6738403a547b6a45a8b0ab30"
+    },
+    "day": "Wednesday",
+    "breakfast": "Lemon Rice",
+    "lunch": "Chole,batura",
+    "snacks": "Poha",
+    "dinner": "Rice,Rasam",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "673857bf547b6a45a8b0ab31"
+    },
+    "day": "Thursday",
+    "breakfast": "Parata, Coriander Sabji",
+    "lunch": "Fried Rice",
+    "snacks": "Orange",
+    "dinner": "Rice, Rasam ",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "673858a2547b6a45a8b0ab32"
+    },
+    "day": "Friday",
+    "breakfast": "Chapati, Sweetpumpkin",
+    "lunch": "Veg Pulav",
+    "snacks": "Pani Puri",
+    "dinner": "Chicken Biriyani",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67385914547b6a45a8b0ab33"
+    },
+    "day": "Saturday",
+    "breakfast": "Chapati, Egg Curry",
+    "lunch": "Jeera Rice",
+    "snacks": "Gobi Manchurian",
+    "dinner": "Panner Biriyani",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67385ab7547b6a45a8b0ab34"
+    },
+    "day": "Sunday",
+    "breakfast": "Chapati, Mixed grains",
+    "lunch": "White Rice and Rasam",
+    "snacks": "Gulab Jamun",
+    "dinner": "Rice and Dal",
+    "__v": 0
+  }]

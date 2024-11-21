@@ -1,0 +1,97 @@
+/* General Styling for the Page */
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #f7f9fc; /* Light Background for better readability */
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  color: #2C3E50; /* Dark Slate Blue for text */
+  overflow-y: auto;
+}
+
+/* Heading Styling */
+.contact-info-heading {
+  font-size: 28px;
+  color: #34495E; /* Charcoal */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Contact Details Styling */
+.contact-details {
+  width: 100%;
+  max-width: 600px; /* Restrict width for better readability */
+  margin: 0 auto;
+}
+
+.contact-details ol {
+  padding-left: 20px;
+}
+
+.contact-details li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2C3E50;
+}
+
+.contact-details ul {
+  padding-left: 20px;
+  list-style-type: disc; /* Use bullets for nested lists */
+  margin-top: 5px;
+}
+
+.contact-details ul li {
+  font-size: 14px;
+  color: #34495E;
+}
+
+/* Back to Dashboard Button Styling */
+.back-to-dashboard-button {
+  margin-top: 20px;
+  display: block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(90deg, #34495E, #5B99F7); /* Charcoal to Light Slate Blue Gradient */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-to-dashboard-button:hover {
+  background: linear-gradient(90deg, #5B99F7, #34495E); /* Reversed Gradient */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-dashboard-button:active {
+  background-color: #1A242F; /* Darker Slate Blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-details {
+      padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-info-heading {
+      font-size: 24px;
+  }
+
+  .back-to-dashboard-button {
+      width: 90%; /* Full width on smaller screens */
+      font-size: 14px;
+  }
+}
+

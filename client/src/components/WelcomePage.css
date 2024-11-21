@@ -1,0 +1,68 @@
+/* General Page Styling */
+.welcome-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    transition: transform 1.0s ease-in-out, opacity 1.0s ease-in-out;
+}
+
+.welcome-container.fade-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/* Right Section (Welcome Text) */
+.welcome-container-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slate Blue */
+    color: #2C3E50;
+    text-align: center;
+}
+
+.welcome-container-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-container-left p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.welcome-container-left .login-button {
+    padding: 12px 25px;
+    background-color: #092753; /* Soft Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-container-left .login-button:hover {
+    background-color: #34495e;
+}
+
+/* Left Section (Image/Design) */
+.image-container {
+    flex: 1;
+    background: linear-gradient(135deg, #000000, #00008b); /* Black to Dark Blue gradient */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 500px;
+}
+
+.image-container img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}

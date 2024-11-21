@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(45deg, black, #083f7e); /* Gradient from black to dark blue at a 45-degree angle */
+    background-size: 200% 200%; /* Make the gradient large enough to animate */
+    animation: gradientMove 5s ease infinite; /* Animate the gradient */
+    color: #fff; /* White text color for contrast */
+    font-family: Arial, sans-serif; /* Optional: Set a font */
+}
+/* Rules Heading */
+.rules-heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ECF0F1; /* Light Grey Text */
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #000000, #00008b); /* Black to Dark Blue Gradient */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%; /* Start at the top left */
+    }
+    50% {
+        background-position: 100% 100%; /* Move to the bottom right */
+    }
+    100% {
+        background-position: 0% 0%; /* Return to the top left */
+    }
+}
+
+.rules-list {
+    list-style-type: decimal;
+    padding-left: 40px;
+    color: #fff; /* White text color for rules */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+}

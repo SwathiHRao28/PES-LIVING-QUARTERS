@@ -1,0 +1,113 @@
+/* Container for the upload page */
+.upload-page-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Page title styling */
+.upload-page-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section for uploading/viewing content */
+.upload-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styling for the file input */
+.upload-section input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.upload-section input[type="file"]:hover {
+    border-color: #4CAF50;
+}
+
+/* Existing image status */
+.upload-section p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.upload-section p span {
+    font-weight: bold;
+}
+
+/* View button styling */
+.view-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #45a049;
+}
+
+/* Display uploaded image */
+.image-display-section {
+    margin-top: 20px;
+}
+
+.uploaded-image {
+    max-width: 100%;
+    max-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .upload-page-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .upload-section input[type="file"] {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .view-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+.delete-button {
+    margin-left: 10px;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
